@@ -19,16 +19,17 @@ Template.userSettings.events({
             return alert(error.reason);
           Router.go('welcomePage');
         });
-        } else {
-            Settings.update(userId, {$set: postProperties}, function(error) {
-              if (error) {
-              // display the error to the user
-              throwError(error.reason);
-              } else {
-                Router.go('welcomePage');
-              }    
-            })
-
+    } else {
+        Settings.update(userId, {$set: settings}, function(error) {
+          if (error) {
+            // display the error to the user
+            throwError(error.reason);
+          } else {
+            Router.go('welcomePage');
+          }    
+        })
+        
     }      
-  },
+  }
+
 });

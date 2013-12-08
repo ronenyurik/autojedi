@@ -1,15 +1,16 @@
 Settings = new Meteor.Collection('settings');
 
-Settings.allow({
-  update: ownsSettings
-});
+// Settings.allow({
+//    insert: userPer,
+//    update: userPer
+//  });
 
-Settings.deny({
-  update: function(userId, fieldNames) {
-    // may only edit the following two fields:
-    return (_.without(fieldNames, 'interval', 'email', 'sms', 'avatar').length > 0);
-  }
-});
+// Settings.deny({
+//   update: function(userId, fieldNames) {
+//     // may only edit the following two fields:
+//     return (_.without(fieldNames, 'interval', 'email', 'sms', 'avatar').length > 0);
+//   }
+// });
 
 Meteor.methods({
   post: function(postAttributes) {
