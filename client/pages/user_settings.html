@@ -1,0 +1,40 @@
+<template name="userSettings">
+  <form class="main">
+    <div class="control-group">
+        <label class="control-label" for="interval"><strong>Run Interval</strong></label>
+        <div class="select">
+            <select name="interval">
+                <option>Please Select...</option>
+                <option>15 Min.</option>
+                <option>30 Min.</option>
+                <option>60 Min.</option>
+                <option>120 Min.</option>
+                <option>180 Min.</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label" for="notification"><strong>Notification Method</strong></label>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" name="email" > Email
+            </label>
+            <label>
+                <input type="checkbox" name="sms" > SMS
+            </label>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label for="avatar"><strong>Avatar image</strong></label>
+        <input type="file" name="avatar">
+    </div> 
+
+    <div class="control-group">
+        <div class="controls">
+            <input type="submit" value="Submit" class="btn btn-primary"/>
+        </div>
+    </div>
+  </form>
+</template>
