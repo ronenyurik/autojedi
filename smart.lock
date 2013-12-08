@@ -4,7 +4,8 @@
     "basePackages": {
       "iron-router": {},
       "accounts-ui-bootstrap-dropdown": {},
-      "jquery-ui": {}
+      "jquery-ui": {},
+      "meteor-file": {}
     },
     "packages": {
       "iron-router": {
@@ -21,6 +22,11 @@
         "git": "https://github.com/TimHeckel/meteor-jquery-ui.git",
         "tag": "v1.9.2",
         "commit": "c437d45edcf1367df8d5ffa8bad2867758030bd2"
+      },
+      "meteor-file": {
+        "git": "https://github.com/EventedMind/meteor-file.git",
+        "tag": "v0.0.7",
+        "commit": "5d3edaaccfb9d0995cf848abfb61c3bd101ea507"
       }
     }
   }

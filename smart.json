@@ -2,6 +2,7 @@
   "packages": {
     "iron-router": {},
     "accounts-ui-bootstrap-dropdown": {},
-    "jquery-ui": {}
+    "jquery-ui": {},
+    "meteor-file": {}
   }
 }
