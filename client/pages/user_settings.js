@@ -7,8 +7,8 @@ Template.userSettings.events({
     var settings = {
       interval: $(e.target).find('[name=interval]').val(),
       email: $(e.target).find('[name=email]').prop('checked'),
-      sms: $(e.target).find('[name=sms]').prop('checked'),
-      avatar: $(e.target).find('[name=avatar]').val()
+      sms: $(e.target).find('[name=sms]').prop('checked')
+      // avatar: $(e.target).find('[name=avatar]').val()
     }
 
 
