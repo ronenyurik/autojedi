@@ -3,6 +3,7 @@
     "iron-router": {},
     "accounts-ui-bootstrap-dropdown": {},
     "jquery-ui": {},
-    "meteor-file": {}
+    "meteor-file": {},
+    "spin": {}
   }
 }

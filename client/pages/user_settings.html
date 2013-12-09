@@ -1,9 +1,9 @@
 <template name="userSettings">
   <form class="main">
     <div class="control-group">
-        <label class="control-label" for="interval"><strong>Run Interval</strong></label>
+        <label class="control-label" for="interval"><strong>Run Interval - {{interval}}</strong></label>
         <div class="select">
-            <select name="interval" value="{{interval}}">
+            <select name="interval">
                 <option>Please Select...</option>
                 <option>15 Min.</option>
                 <option>30 Min.</option>
@@ -18,17 +18,17 @@
         <label class="control-label" for="notification"><strong>Notification Method</strong></label>
         <div class="checkbox">
             <label>
-                <input type="checkbox" name="email" > Email
+                <input type="checkbox" name="email" checked="{{email}}"/> Email - {{email}}
             </label>
             <label>
-                <input type="checkbox" name="sms" > SMS
+                <input type="checkbox" name="sms" checked="{{sms}}"/> SMS - {{sms}}
             </label>
         </div>
     </div>
 
     <div class="control-group">
-        <label for="avatar"><strong>Avatar image</strong></label>
-        <input type="file" name="avatar" value="{{avatar}}">
+        <label for="avatar"><strong>Avatar image - {{avatar}}</strong></label>
+        <input type="file" name="avatar" value="{{avatar}}"/>
     </div> 
 
     <div class="control-group">

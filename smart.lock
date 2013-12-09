@@ -5,7 +5,8 @@
       "iron-router": {},
       "accounts-ui-bootstrap-dropdown": {},
       "jquery-ui": {},
-      "meteor-file": {}
+      "meteor-file": {},
+      "spin": {}
     },
     "packages": {
       "iron-router": {
@@ -27,6 +28,11 @@
         "git": "https://github.com/EventedMind/meteor-file.git",
         "tag": "v0.0.7",
         "commit": "5d3edaaccfb9d0995cf848abfb61c3bd101ea507"
+      },
+      "spin": {
+        "git": "https://github.com/SachaG/meteor-spin.git",
+        "tag": "v0.2.0",
+        "commit": "fd3a2871a69442848b4b4e74f5e1ae28fa4a95a4"
       }
     }
   }

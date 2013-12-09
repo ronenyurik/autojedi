@@ -12,5 +12,5 @@ iron-router
 accounts-password
 accounts-ui-bootstrap-dropdown
 jquery-ui
-insecure
 meteor-file
+spin
