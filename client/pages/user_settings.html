@@ -17,20 +17,21 @@
     <div class="control-group">
         <label class="control-label" for="notification"><strong>Notification Method</strong></label>
         <div class="checkbox">
-            <label>
-                <input type="checkbox" name="email" checked="{{email}}"/> Email - {{email}}
+            <label class="checkbox">
+                <input id="email" type="checkbox" name="email" {{emailChk}}/> Email - {{email}}
             </label>
-            <label>
-                <input type="checkbox" name="sms" checked="{{sms}}"/> SMS - {{sms}}
+            <label class="checkbox">
+                <input id="sms" type="checkbox" name="sms" {{smsChk}}/> SMS - {{sms}}
             </label>
         </div>
     </div>
 
-    <!-- <div class="control-group">
+    
+    <div class="control-group">
         <label for="avatar"><strong>Avatar image - {{avatar}}</strong></label>
         <input type="file" name="avatar" value="{{avatar}}"/>
     </div> 
- -->
+
     <div class="control-group">
         <div class="controls">
             <input type="submit" value="Submit" class="btn btn-primary"/>

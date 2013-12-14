@@ -1,0 +1,26 @@
+<template name="dashboard">
+  	<div class="control-group">
+        <div class="controls">
+            <input type="button" value="Refresh Builds List" class="btn btn-info" id="buildButton"/>
+        </div>
+        <br><br>
+       	<table class="table table-hover">
+		    <thead>
+		        <th>Duration</th><th>Number</th><th>Result</th><th>Timestamp</th>
+		    </thead>
+		    <tbody>
+		    	{{#each recentBuilds}}
+			        	<tr>
+			            	<td>{{duration}}</td>
+				            
+				            <td>{{number}}</td>
+				            <td>{{result}}</td>
+				            <td>{{timestamp}}</td>
+			        	</tr>
+				{{else}}
+			        <tr>
+			            <td colspan="4">No data</td>
+			        </tr>
+		    	{{/each}}
+		</table>        
+</template>
